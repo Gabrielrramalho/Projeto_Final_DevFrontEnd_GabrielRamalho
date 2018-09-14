@@ -38,3 +38,11 @@ nav ul li a {
     top: 70px;
     right: 500px;
 }
+/*cor do texto do carrousel*/
+.corLc{
+    color:black;
+}
+/*cor do botão carrosel*/
+.corB{
+    color: yellow;
+}
