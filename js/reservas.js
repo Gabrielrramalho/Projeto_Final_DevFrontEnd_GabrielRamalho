@@ -30,14 +30,8 @@ $(function () {
 
 
 
-    var nome = document.getElementById('nome').value;
-    var sNome = document.getElementById('sNome').value;
-    var data = document.getElementById('data').value;
-    var hora = document.getElementById('email').value;
-    var telefone = document.getElementById('fone').value
-    var nPessoas = document.getElementById('nPessoas').value
-
-
+   
 
 
 });
+

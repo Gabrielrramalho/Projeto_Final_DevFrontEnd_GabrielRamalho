@@ -123,6 +123,28 @@ nav ul li a {
 .imagen{
     float: right;
     position: absolute;
+    top: 185px;
+    right: 10px;
+    height: 300px;
+}
+
+
+.imagen2{
+    float: right;
+    position: absolute;
+    top: 500px;
+    right: 10px;
+    height: 270px;
+    
+}
+.imagen3{
+    float: right;
+    position: absolute;
+    top: 500px;
+    right: 290px;
+    height: 270px;
+    width: 250px
+    
 }
 
 
