@@ -119,11 +119,10 @@ nav ul li a {
     background-color: #8A2326; 
 
 }
-.foT{
-    text-align: center;
+
+.imagen{
+    float: right;
+    position: absolute;
 }
-
-
-
 
 
