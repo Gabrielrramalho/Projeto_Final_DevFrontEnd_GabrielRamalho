@@ -1,34 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Picanha e sal</title>
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-</head>
-<body>
-        <header class="bgroundH">
-                <img src="img/logo.jpg" alt="logo">
-              </header>
-            
-              <nav class="posicaoN">
-            
-            
-                <ul>
-                  <li><a class="hover" href="index.html">Home</a></li>
-                  <li><a class="hover" href="#">Carnes</a></li>
-                  <li><a class="hover" href="reservas.html">Reservas</a></li>
-                  <li><a class="hover" href="eventos.html">Eventos</a></li>
-                  <li><a class="hover" href="#">Home</a></li>
-                  <li><a class="hover" href="#">Home</a></li>
-                </ul>
-              </nav>
 
-              <main>
-                  <img src="img/eventos.png">
-              </main>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Picanha e sal</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/jquery.js"></script>
+  <script>
+
+    $(function(){
+      $.ajax({
+                url: 'data/eventostxt.txt',
+                success: function (r) {
+                    //console.log(r);
+                    //alert('encontrou');
+                    $('h1').after('<p class=" fEvento2 eventosP ">' + r + '</p>');
+                },
+                error: function () {
+                    alert('Ocorreu um erro!!')
+                }
+
+            });
+    });
+  </script>
+</head>
+
+<body class="bgroundE">
+  <header class="bgroundH">
+    <img src="img/logo.jpg" alt="logo">
+  </header>
+
+  <nav class="posicaoN">
+
+
+    <ul>
+      <li><a class="hover" href="index.html">Home</a></li>
+      <li><a class="hover" href="#">Carnes</a></li>
+      <li><a class="hover" href="reservas.html">Reservas</a></li>
+      <li><a class="hover" href="eventos.html">Eventos</a></li>
+      <li><a class="hover" href="#">Home</a></li>
+      <li><a class="hover" href="#">Home</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <img class="imgEventos" src="img/top-eventos.png">
+
+    <h1 class="fEvento eventosP2 font-weight-bold">Eventos</h1>
     
+  </main>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 </body>
+
 </html>

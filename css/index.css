@@ -146,5 +146,41 @@ nav ul li a {
     width: 250px
     
 }
+/*guia EVENTOS*/
+/*posiçao (p) eventos*/
+.eventosP{
+    position: absolute;
+    top: 400px;
+    left: 200px;
+    
+   
+}
+.eventosP2{
+    position: absolute;
+    left: 400px
+    
+   
+}
+
+.imgEventos{
+    position: absolute;
+    right: 0;
+}
+
+.bgroundE{
+    background-color:rgba(138, 35, 38, 0.747);
+    
+}
+/*fonte e cor eventos)*/
+.fEvento{
+    color:yellow;
+}
+.fEvento2{
+    color:black;
+    font-size: 17px;
+}
+
+
+
 
 
