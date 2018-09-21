@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Picanha e sal</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body class="bgroundV">
+    <header class="bgroundH">
+        <img src="img/logo.jpg" alt="logo">
+    </header>
+
+    <nav class="posicaoN">
+
+
+        <ul>
+            <li><a class="hover" href="index.html">Home</a></li>
+            <li><a class="hover" href="carnes.html">Carnes</a></li>
+            <li><a class="hover" href="reservas.html">Reservas</a></li>
+            <li><a class="hover" href="eventos.html">Eventos</a></li>
+            <li><a class="hover" href="#">Home</a></li>
+            <li><a class="hover" href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    <main>
+        <img class="imgEventos" src="img/eventos.png" alt="eventos">
+        <form id="formContato">
+            <div class="form-row">
+                <div class=" form-group col-md-2">
+                    <label>Nome:</label>
+                    <input type="text" class=" form-control" id="nomeC" placeholder="Nome" required>
+                    <span id="errorN"></span>
+                </div>
+                <div class="form-group col-md-2">
+                    <label><br></label>
+                    <input type="text" class="form-control" id="snomeC" placeholder="Segundo Nome" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="emailC" placeholder="Email">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-2">
+                    <label>Telefone</label>
+                    <input type="number" class="form-control" id="foneC" placeholder="(DDD)" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class=" form-group col-md-6">
+                    <label>Assunto:</label>
+                    <input type="text" class=" form-control" id="assuntoC" placeholder="Assunto" required>
+                    <span id="errorN"></span>
+                </div>
+            </div>
+            <div class="form-group col-md-5">
+                <label for="exampleFormControlTextarea1">Mensagen:</label>
+                <textarea class="form-control" id="mensagemC" rows="5"></textarea>
+            </div>
+            <button type="submit" class="btn btn-danger">Enviar</button>
+            <input type="reset" class="btn btn-danger" value="Limpar">
+        </form>
+        
+
+    </main>
+    
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/contatos.js"></script>
+</body>
+
+</html>
