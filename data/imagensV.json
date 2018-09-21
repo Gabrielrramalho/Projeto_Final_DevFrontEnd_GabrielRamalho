@@ -1,15 +1,100 @@
 [
     {
-        "img": "img/churrascaria1.jpg"
+        "img" : "img/alcatra.jpg",
+        "nome": "Alcatra",
+        "descricao": "A Alcatra é um dos cortes mais versáteis para o churrasco. Pode-se assá-la inteira ou dela retirar a Picanha, a Maminha e o Baby Beef (Miolo da Alcatra).."
     },
     {
-        "img": "img/churrascaria2.jpg"
+        "nome": "Carne Suina",
+        "img": "img/suina.jpg",
+        "descricao": "De sabor e maciez característicos, a carne suína é hoje uma das mais consumidas no mundo. Entre as partes mais utilizadas estão o lombo, a costela e a bisteca."
     },
     {
-        "img": "img/churrascaria3.jpg"
+        
+        "img": "img/filet.jpg",
+        "nome":" Contra Filet",
+        "descricao":"Considerado um dos mais saborosos cortes de carne bovina. Da sua parte anterior, localizada próxima à traseira do animal, retira-se o Bife de Chorizo. Da parte posterior, retira-se o Entrecote, ou Bife Ancho. "
+
     },
     {
-        "img": "img/churrascaria4.jpg"
+        "img": "img/cordeiro.jpg",
+        "nome":" Cordeiro",
+        "descricao":"Ele conquista cada vez mais apreciadores no Brasil e no mundo, e é conhecido pelo seu sabor e por ter baixos teores de gordura. "
+
+    },
+    {
+        "img": "img/costela1.jpg",
+        "nome":"Costela",
+        "descricao":"É do quadro completo da costela,  que se extrai a Costela de Tira, o Vazio da Costela e o Assado de Tira, opção que tem conquistado cada vez mais os brasileiros. A peça deve ser assada inteira e tem aparência de concha."
+
+    },
+    {
+        "img": "img/costelap.jpg",
+        "nome":"Costela Premium",
+        "descricao":"Este corte especial é retirado entre a segunda e sexta Costela do boi, com parte do miolo do acém. Devido ao seu alto grau de marmoreio, a Costela Premium possui sabor e maciez únicos. "
+
+    },
+    {
+        "img": "img/costelap.jpg",
+        "nome":"Cupim",
+        "descricao":"É a corcova do animal, formada por uma bola de carne entremeada de gordura e bastante saborosa. A peça deve ser assada inteira, por aproximadamente 4 quatro horas, enrolada em folha de celofane para ficar macia e para que a gordura não respingue no fogo."
+
+    },
+    {
+        "img": "img/filetm.jpg",
+        "nome":"Filet Mignon",
+        "descricao":"Trata-se de uma carne extremamente macia por não ter nenhum contato com os membros do animal. O filet mignon também é conhecido por ser uma das carnes mais magras e que, apesar da pouca gordura e marmoreio, possui boa irrigação tornando-se uma carne  muito suculenta."
+
+    },
+    {
+        "img": "img/fraldinha.jpg",
+        "nome":"Fraldinha",
+        "descricao":"É considerada a mais suculenta e uma das mais saborosas entre todas as carnes, pois é a única que fica na parte interna do animal, sendo constantemente irrigada pela corrente sanguínea."
+
+    },
+    {
+        "img": "img/frango.jpg",
+        "nome":"Frango",
+        "descricao":"Uma das carnes mais consumidas pelos brasileiros, o frango é também uma das mais versáteis. Aqui no Barbacoa, servimos as melhores partes do frango para churrasco, que são o galeto, a coxa e o coração. Já na opção à la carte, o frango desossado do Barbacoa é uma opção suculenta e saborosa."
+        
+    },
+    {
+        "img": "img/javali.jpg",
+        "nome":"Javali",
+        "descricao":"O Javali é uma das carnes exóticas mais conhecidas, apreciadas e saudáveis, já que sua gordura se concentra em uma camada superficial, em vez de incrustada entre as fibras. "
+        
+    },
+    {
+        "img": "img/maminha.jpg",
+        "nome":"Maminha",
+        "descricao":"Localizada no fim da peça inteira da alcatra, próximo à ponta de agulha, no traseiro do boi, a maminha é uma das carnes mais valorizadas para um bom churrasco. Muito saborosa, tem uma dosagem de gordura entremeando suas fibras que acentua sua maciez e suculência."
+        
+    },
+    {
+        "img": "img/peixes.jpg",
+        "nome":"Peixes",
+        "descricao":"Para os fãs de pescados, os peixes têm espaço reservado no cardápio das casas à la carte do Barbacoa. Além da Truta com amêndoas, o Salmão grelhado e o Linguado com alcaparras, você também pode encontrar duas opções de peixes vindos diretamente do Oceano Índico e conhecidos por seu sabor. "
+        
+    },
+    {
+        "img": "img/picanha.jpg",
+        "nome":"Picanha",
+        "descricao":"Preferência nacional do churrasco, a Picanha é uma carne macia e com boa marmorização, que traz ainda uma grossa capa de gordura que garante suculência  e acentua seu sabor."
+        
+    },
+    {
+        "img": "img/prime.jpg",
+        "nome":"Prime Rib",
+        "descricao":"Este saboroso e suculento corte com osso de origem americana, é retirado da parte anterior do Contra Filet, uma carne de alta qualidade e bem marmorizada. "
+        
+    },
+    {
+        "img": "img/tbone.jpg",
+        "nome":"T-bone",
+        "descricao":"Este corte especial é um dos mais apreciados pelos amantes de carne, pois traz a combinação perfeita entre duas partes nobres do boi: o miolo do Filet Mignon e o Chorizo."
+        
     }
 
+    
+    
 ]

@@ -47,7 +47,7 @@ nav ul li a {
 }
 /*cor do botão carrosel*/
 .corB{
-    color: yellow;
+    color: rgb(0, 0, 0);
 }
 /*hover para o botão do nav*/
 .hover:hover{
@@ -179,6 +179,18 @@ nav ul li a {
     color:black;
     font-size: 17px;
 }
+.textCa{
+    text-align: center;
+    color: yellow;
+}
+
+.pFotter{
+    position: absolute;
+    bottom: 0px;
+    left: 30px
+}
+
+
 
 
 
