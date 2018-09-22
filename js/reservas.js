@@ -3,7 +3,7 @@ $(function () {
     function cadastrarR() {
 
         var cadastro = {
-            nome: document.getElementById('nome').value,
+            nome: document.getElementById('validationCustom01').value,
             snome: document.getElementById('sNome').value,
             data: document.getElementById('data').value,
             hora: document.getElementById('hora').value,
@@ -34,4 +34,8 @@ $(function () {
 
 
 });
+
+
+
+
 

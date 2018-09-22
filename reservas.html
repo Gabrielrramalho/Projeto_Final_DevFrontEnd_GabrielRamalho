@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
+
 <body class="bgroundV ">
     <header class="bgroundH">
         <img src="img/logo.jpg" alt="logo">
@@ -21,33 +23,32 @@
             <li><a class="hover" href="carnes.html">Carnes</a></li>
             <li><a class="hover" href="reservas.html">Reservas</a></li>
             <li><a class="hover" href="eventos.html">Eventos</a></li>
-            <li><a class="hover" href="#">Home</a></li>
+            <li><a class="hover" href="promocoes.html">Promoções</a></li>
             <li><a class="hover" href="contato.html">Contato</a></li>
         </ul>
     </nav>
 
     <main>
-        
+
         <h1>Faça sua reserva:</h1>
         <form id="formReservas">
             <div class="form-row">
                 <div class=" form-group col-md-2">
                     <label>Nome</label>
-                    <input type="text" class=" form-control" id="nome" placeholder="Nome" required>
-                    <span id="errorN"></span>
+                    <input class="valid" type="text" class=" form-control" id="nome" placeholder="Nome" >
                 </div>
                 <div class="form-group col-md-2">
                     <label><br></label>
-                    <input type="text" class="form-control" id="sNome" placeholder="Segundo Nome" required>
+                    <input type="text" class="form-control" id="sNome" placeholder="Segundo Nome" >
                 </div>
             </div>
             <div class="form-group col-md-2">
                 <label for="inputDate">Data:</label>
-                <input type="date" class="form-control" id="data" required>
+                <input type="date" class="form-control" id="data" >
             </div>
             <div class="form-group col-md-2">
                 <label>Hora</label>
-                <select id="hora" class="form-control" required>
+                <select id="hora" class="form-control" >
                     <option selected>12:00 as 18:00</option>
                     <option>18:00 as 23:00</option>
                 </select>
@@ -55,44 +56,44 @@
             <div class="form-row">
                 <div class="form-group col-md-3">
                     <label for="inputEmail4">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Email" required>
+                    <input type="email" class="form-control" id="email" placeholder="Email" >
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-group col-md-2">
                     <label>Telefone</label>
-                    <input type="number" class="form-control" id="fone" placeholder="(DDD)" required>
+                    <input type="number" class="form-control" id="fone" placeholder="(DDD)" >
                 </div>
             </div>
             <div class="form-row">
-                <div class="form-group col-md-1"> 
+                <div class="form-group col-md-1">
                     <label>Numero de pessoas:</label>
-                    
-                    <input type="number" class="form-control" id="nPessoas" required>
+
+                    <input type="number" class="form-control" id="nPessoas" >
                 </div>
             </div>
             <button type="submit" class="btn btn-danger">Reservar</button>
             <input type="reset" class="btn btn-danger" value="Limpar">
         </form>
+        <div id="usuario">
+            Aguardando dados corretos...
+        </div>
         <div class="bForm">
-        <img class="img-thumbnail2 rounded imagen" src="img/mesas.jpg" alt="mesas">
-        <img class="img-thumbnail2 rounded imagen2" src="img/mesas2.jpg" alt="mesas">
-        <img class="img-thumbnail2 rounded imagen3" src="img/mesas 3.jpg" alt="mesas">
-    </div>
-    
+            <img class="img-thumbnail2 rounded imagen" src="img/mesas.jpg" alt="mesas">
+            <img class="img-thumbnail2 rounded imagen2" src="img/mesas2.jpg" alt="mesas">
+            <img class="img-thumbnail2 rounded imagen3" src="img/mesas 3.jpg" alt="mesas">
+        </div>
+
     </main>
-
-
-
-
-
-
-
-
-    <footer class="bgroundV">
-        <div></div>
-
-    </footer>
+    <hr class="hr bgroundV">
+    <div>
+        <footer class="bgroundF textF2 ">Horario de funcionamento: segunda a sabado: 11:00h as 00:00h , domingo de
+            11:00h as
+            23:00h
+            <br>
+            <br>
+            <br>&copy-Todos os direitos reservados a-Biel.rramalho@gmail.com-Gabriel-Ramalho </footer>
+    </div>
     <script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

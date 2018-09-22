@@ -1,26 +1,36 @@
 var tbContatos = [];
 $(function () {
+    function cadastrarR() {
 
-
-    function salvarContato() {
-        var contato = {
+        var cadastro = {
             nome: document.getElementById('nomeC').value,
-            nomeS: document.getElementById('sNomec').value,
+            snome: document.getElementById('sNomeC').value,
             email: document.getElementById('emailC').value,
-            telC: document.getElementById('foneC').value,
-            assunto: document.getElementById('assuntoC').value,
-            mensagem: document.getElementById('mensagemC').value
+            fone: document.getElementById('foneC').value,
+            email: document.getElementById('email').value,
+            assuntos: document.getElementById('assuntoC').value,
+            mensagen: document.getElementById('mensagemC').value
+
         };
-        tbContatos.push(contato);
-        localStorage.setItem("tbContato", JSON.stringify(tbContatos));
+        tbContatos.push(cadastro)
+        localStorage.setItem('tbContatos', JSON.stringify(tbContatos))
+
+
+
 
     };
-    
-    $('#forContato').submit(function(){
-        event.preventDefault();
 
-        salvarContato();
+    $('#formContato').submit(function(){
+    event.preventDefault()
+
+    cadastrarR();
+
+
     });
+
+
+
+   
 
 
 });
