@@ -10,52 +10,74 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <script src="js/jquery.js"></script>
   <script>
-      $(function () {
+    /* $(function () {
       $.ajax({
         url: 'data/eventostxt.txt',
         success: function (r) {
           //console.log(r);
           //alert('encontrou');
-          $('h1').after('<p class=" fEvento2 eventosP ">' + r + '</p>');
+          $('h1').after('<p class=" col-md-4 eventosPa  fEvento2  ">' + r + '</p>');
         },
         error: function () {
           alert('Ocorreu um erro!!')
         }
 
       });
-    });
-    
+    });*/
   </script>
 </head>
 
 <body class="bgroundE">
   <header class="bgroundH">
-    <img src="img/logo.jpg" alt="logo">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mt-2 mb-2">
+          <img height="100" src="img/logo.jpg">
+        </div>
+        <div class="col-md-8">
+          <nav id="nav_horizontal">
+            <ul>
+              <li><a class="hover" href="index.html">Home</a></li>
+              <li><a class="hover" href="carnes.html">Carnes</a></li>
+              <li><a class="hover" href="reservas.html">Reservas</a></li>
+              <li><a class="hover" href="eventos.html">Eventos</a></li>
+              <li><a class="hover" href="promocoes.html">Promoções</a></li>
+              <li><a class="hover" href="contato.html">Contato</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
   </header>
 
-  <nav class="posicaoN">
-    <ul>
-      <li><a class="hover" href="index.html">Home</a></li>
-      <li><a class="hover" href="carnes.html">Carnes</a></li>
-      <li><a class="hover" href="reservas.html">Reservas</a></li>
-      <li><a class="hover" href="eventos.html">Eventos</a></li>
-      <li><a class="hover" href="promocoes.html">Promoções</a></li>
-      <li><a class="hover" href="contato.html">contato</a></li>
-    </ul>
-  </nav>
-
   <main>
-    <div style="height: 718px;">
-      <img class="imgEventos" src="img/top-eventos.png">
+    <div>
+    <h1 style="text-align: center; color: yellow" class="font-weight-bold">Eventos</h1>
+  </div>
+    </div>
+    <div class="row featurette">
+      <div class=" col-md-7">
+        <p style="position:absolute; top:150px" class="lead positionE"><span class="font-weight-bold ">A CHURRASCARIA PICANHA E SAL ESTÁ SEMPRE PRONTO PARA RECEBER
+            VOCÊ E CUSTOMIZAR A SUA OCASIÃO<br>
+            ESPECIAL, SEJA UMA FESTA DE ANIVERSÁRIO, CASAMENTO OU EVENTO CORPORATIVO.</span><br>
+          Você é quem escolhe se será no salão principal, na privacidade das salas VIP ou nas tendas ao ar livre,
+          montadas exclusivamente para o seu evento.<br><br>
 
-      <h1 class="fEvento eventosP2 font-weight-bold">Eventos</h1>
+          Além do nosso famoso rodízio, buffet e o incrível cardápio de bebidas, nós oferecemos opções específicas como sobremesa, coffee break e coquetel.<br><br>
+
+          Todas as unidades estão disponíveis para a realização das cerimônias privadas.<br></p>
+        <br><br><br>
+      </div>
+      <div class=" dispN col-md-5">
+        <img class="featurette-image img-fluid mx-auto" src="img/top-eventos.png" alt="Generic placeholder image">
+      </div>
     </div>
 
 
   </main>
   <hr class="hr bgroundV">
   <div>
-    <footer class="bgroundF textF2 ">Horario de funcionamento: segunda a sabado: 11:00h as 00:00h , domingo de 11:00h
+    <footer class="dispN bgroundF textF2 ">Horario de funcionamento: segunda a sabado: 11:00h as 00:00h , domingo de 11:00h
       as
       23:00h
       <br>

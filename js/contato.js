@@ -1,5 +1,5 @@
 $(function () {
-    $('#reservas').on('submit', function () {
+    $('#contato').on('submit', function () {
         let erro = 0;
 
         if ($('#nome').val().search(' ') == -1) {
@@ -37,17 +37,14 @@ $(function () {
             $('#erroAssunto').html('');
         }
 
-        //Validação do campo Assunto
-        if ($('#hora').val() == "") {
-            $('#erroHora').html("Selecione uma opção <br>");
+        //Validação da mensagem
+        if ($('msg').val() === '') {
+            $('#erroMsg').html("Digite uma mensagem!!!<br>");
             erro++;
             return false;
         } else {
-            $('#erroHora').html('');
+            $('#erroMsg').html('');
         }
-
-
-        
         //evita de o formulario ser submetido e a página ser recarregada
         event.preventDefault();
 
@@ -55,16 +52,14 @@ $(function () {
         let nome = $('#nome').val();
         let email = $('#email').val();
         let assunto = $('#assunto').val();
-        let hora = $('#hora').val();
-        let npessoas = $('#nPessoas').val();
+        let mensagem = $('#msg').val();
 
         //Guardar o que foi digitado em variáveis
         let contato = {
             nome: nome,
             email: email,
             assunto: assunto,
-            hora: hora,
-            npessoas: npessoas
+            comentario: mensagem
         }
         //zerar os campos de erros - Pode-se fazer assim?
         $('#erroNome').html("");
@@ -72,7 +67,17 @@ $(function () {
         $('#erroAsunto').html("");
         $('#erroMsg').html("");
         //Cadastrar apenas se a não houver de erros
-        
+        if (erro == 0) {
+            var tbContatos;
+            if (localStorage.getItem('tbContatos')) {
+                tbContatos = JSON.parse(localStorage.getItem('tbContatos'));
+            } else {
+                tbContatos = [];
+            }
+            tbContatos.push(contato);
+            localStorage.setItem('tbContatos', JSON.stringify(tbContatos));
+            alert('Contato enviado com sucesso! Em breve entraremos em contato!');
+        };
     });
 
     //guardar a quantidade de erros

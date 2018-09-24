@@ -3,12 +3,10 @@ $(function () {
     function cadastrarR() {
 
         var cadastro = {
-            nome: document.getElementById('validationCustom01').value,
-            snome: document.getElementById('sNome').value,
-            data: document.getElementById('data').value,
+            nome: document.getElementById('nome').value,
+            data: document.getElementById('assunto').value,
             hora: document.getElementById('hora').value,
             email: document.getElementById('email').value,
-            telefone: document.getElementById('fone').value,
             numerop: document.getElementById('nPessoas').value
 
         };
@@ -20,22 +18,16 @@ $(function () {
 
     };
 
-    $('#formReservas').submit(function(){
-    event.preventDefault()
+    $('#reservas').submit(function () {
+        event.preventDefault()
 
-    cadastrarR();
+        cadastrarR();
 
 
     });
 
 
 
-   
 
 
 });
-
-
-
-
-

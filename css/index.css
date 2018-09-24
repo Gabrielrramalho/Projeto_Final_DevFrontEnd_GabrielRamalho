@@ -39,7 +39,7 @@ nav ul li a {
 .posicaoN{
     position: absolute;
     top: 70px;
-    right: 500px;
+    right: 300px;
 }
 /*cor do texto do carrousel*/
 .corLc{
@@ -148,13 +148,7 @@ nav ul li a {
 }
 /*guia EVENTOS*/
 /*posiçao (p) eventos*/
-.eventosP{
-    position: absolute;
-    top: 400px;
-    left: 200px;
-    
-   
-}
+
 .eventosP2{
     position: absolute;
     left: 400px
@@ -162,10 +156,7 @@ nav ul li a {
    
 }
 
-.imgEventos{
-    position: absolute;
-    right: 0;
-}
+
 
 .bgroundE{
     background-color:rgba(138, 35, 38, 0.747);
@@ -174,6 +165,7 @@ nav ul li a {
 /*fonte e cor eventos)*/
 .fEvento{
     color:yellow;
+    text-align: center;
 }
 .fEvento2{
     color:black;
@@ -195,6 +187,19 @@ nav ul li a {
     border: 0;
     border-top: 2px solid rgba(0,0,0,.1);
 }
+
+@media screen and (max-width:800px){
+    .dispN{
+        display: none;
+    }
+}
+
+.imgEventos{
+    position: absolute;
+    right: 0;
+}
+
+
 
 
 

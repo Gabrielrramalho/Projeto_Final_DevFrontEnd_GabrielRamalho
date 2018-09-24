@@ -8,77 +8,84 @@
     <title>Picanha e Sal</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.js"></script>
+
+
 </head>
 
 <body class="bgroundV ">
     <header class="bgroundH">
-        <img src="img/logo.jpg" alt="logo">
-    </header>
-
-    <nav class="posicaoN">
-
-
-        <ul>
-            <li><a class="hover" href="index.html">Home</a></li>
-            <li><a class="hover" href="carnes.html">Carnes</a></li>
-            <li><a class="hover" href="reservas.html">Reservas</a></li>
-            <li><a class="hover" href="eventos.html">Eventos</a></li>
-            <li><a class="hover" href="promocoes.html">Promoções</a></li>
-            <li><a class="hover" href="contato.html">Contato</a></li>
-        </ul>
-    </nav>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 mt-2 mb-2">
+              <img height="100" src="img/logo.jpg">
+            </div>
+            <div class="col-md-8">
+              <nav id="nav_horizontal">
+                <ul>
+                  <li><a class="hover" href="index.html">Home</a></li>
+                  <li><a class="hover" href="carnes.html">Carnes</a></li>
+                  <li><a class="hover" href="reservas.html">Reservas</a></li>
+                  <li><a class="hover" href="eventos.html">Eventos</a></li>
+                  <li><a class="hover" href="promocoes.html">Promoções</a></li>
+                  <li><a class="hover" href="contato.html">Contato</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
 
     <main>
 
-        <h1>Faça sua reserva:</h1>
-        <form id="formReservas">
-            <div class="form-row">
-                <div class=" form-group col-md-2">
-                    <label>Nome</label>
-                    <input class="valid" type="text" class=" form-control" id="nome" placeholder="Nome" >
-                </div>
-                <div class="form-group col-md-2">
-                    <label><br></label>
-                    <input type="text" class="form-control" id="sNome" placeholder="Segundo Nome" >
-                </div>
-            </div>
-            <div class="form-group col-md-2">
-                <label for="inputDate">Data:</label>
-                <input type="date" class="form-control" id="data" >
-            </div>
-            <div class="form-group col-md-2">
-                <label>Hora</label>
-                <select id="hora" class="form-control" >
-                    <option selected>12:00 as 18:00</option>
-                    <option>18:00 as 23:00</option>
-                </select>
-            </div>
-            <div class="form-row">
-                <div class="form-group col-md-3">
-                    <label for="inputEmail4">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Email" >
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="form-group col-md-2">
-                    <label>Telefone</label>
-                    <input type="number" class="form-control" id="fone" placeholder="(DDD)" >
-                </div>
-            </div>
+        <h1 style=" color: yellow">Faça sua reserva:</h1>
+        <form class="form-group" method="POST" id="reservas">
+            <!--<form action="reservas.php" method="post" enctype="multipart/form-data">-->
+            Nome:
+            <input class="form-control col-md-3" type="text" placeholder="nome" minlength="7" maxlength="60" id="nome"
+                name="nome" required />
+
+            <span id="erroNome"></span><br>
+
+            Dia da semana
+             <select class="form-control mt-2 col-md-2" name="assunto" id="assunto">
+                        <option value="segunda">Segunda</option>
+                        <option value="terça">Terça</option>
+                        <option value="quarta">Quarta</option>
+                        <option value="quinta">Quinta</option>
+                        <option value="sexta">Sexta</option>
+                        <option value="sabado">Sabado</option>
+                        <option value="domingo">Domingo</option>
+                    </select>
+                    <span id="erroAssunto"></span><br>
+            Horario:
+             <select class="form-control mt-2 col-md-2" name="assunto" id="hora">
+                        <option value="">Selecione</option>
+                        <option value="horario1">12:00 as 18:00</option>
+                        <option value="horario2">18:00 as 23:00</option>
+                    </select>
+                    <span id="erroHora"></span>
+            Email:
+            <input class="form-control mt-2 col-md-4" type="text" placeholder="email" id="email" name="email"
+                        required />
+
+                    <span id="erroEmail"></span>
             <div class="form-row">
                 <div class="form-group col-md-1">
                     <label>Numero de pessoas:</label>
 
-                    <input type="number" class="form-control" id="nPessoas" >
+                    <input type="number" class="form-control" id="nPessoas">
                 </div>
             </div>
-            <button type="submit" class="btn btn-danger">Reservar</button>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <button type="submit" class="btn btn-danger"  value="salvar">Reservar</button>
             <input type="reset" class="btn btn-danger" value="Limpar">
         </form>
-        <div id="usuario">
-            Aguardando dados corretos...
-        </div>
-        <div class="bForm">
+        <div class="dispN">
             <img class="img-thumbnail2 rounded imagen" src="img/mesas.jpg" alt="mesas">
             <img class="img-thumbnail2 rounded imagen2" src="img/mesas2.jpg" alt="mesas">
             <img class="img-thumbnail2 rounded imagen3" src="img/mesas 3.jpg" alt="mesas">
@@ -94,10 +101,12 @@
             <br>
             <br>&copy-Todos os direitos reservados a-Biel.rramalho@gmail.com-Gabriel-Ramalho </footer>
     </div>
-    <script src="js/jquery-3.3.1.slim.min.js"></script>
+
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/validacao.js"></script>
     <script src="js/reservas.js"></script>
+
 </body>
 
 
